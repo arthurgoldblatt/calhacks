@@ -12,7 +12,6 @@
 		7740BF652363A31700435F30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF642363A31700435F30 /* ViewController.swift */; };
 		7740BF682363A31700435F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740BF662363A31700435F30 /* Main.storyboard */; };
 		7740BF6A2363A31900435F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7740BF692363A31900435F30 /* Assets.xcassets */; };
-		7740BF6D2363A31900435F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740BF6B2363A31900435F30 /* LaunchScreen.storyboard */; };
 		7740BF782363A31900435F30 /* HonestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF772363A31900435F30 /* HonestTests.swift */; };
 		7740BF832363A31900435F30 /* HonestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF822363A31900435F30 /* HonestUITests.swift */; };
 		8916E84E2363A7C7007093DA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916E84D2363A7C7007093DA /* ScannerViewController.swift */; };
@@ -43,7 +42,6 @@
 		7740BF642363A31700435F30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7740BF672363A31700435F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7740BF692363A31900435F30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7740BF6C2363A31900435F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7740BF6E2363A31900435F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7740BF732363A31900435F30 /* HonestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HonestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7740BF772363A31900435F30 /* HonestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestTests.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				7740BF642363A31700435F30 /* ViewController.swift */,
 				89997DC92363C71C00BB8EEB /* square.jpg */,
 				7740BF692363A31900435F30 /* Assets.xcassets */,
-				7740BF6B2363A31900435F30 /* LaunchScreen.storyboard */,
 				7740BF6E2363A31900435F30 /* Info.plist */,
 				8916E84D2363A7C7007093DA /* ScannerViewController.swift */,
 			);
@@ -246,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7740BF6D2363A31900435F30 /* LaunchScreen.storyboard in Resources */,
 				7740BF6A2363A31900435F30 /* Assets.xcassets in Resources */,
 				89997DCA2363C71C00BB8EEB /* square.jpg in Resources */,
 				7740BF682363A31700435F30 /* Main.storyboard in Resources */,
@@ -319,14 +315,6 @@
 				7740BF672363A31700435F30 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7740BF6B2363A31900435F30 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7740BF6C2363A31900435F30 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
