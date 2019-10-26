@@ -94,7 +94,11 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
 
     func found(code: String) {
-        print(code)
+        if code == "valid" {
+            self.performSegue(withIdentifier: "successSegue", sender: self)
+        } else {
+            self.performSegue(withIdentifier: "failedSegue", sender: self)
+        }
     }
 
     override var prefersStatusBarHidden: Bool {
