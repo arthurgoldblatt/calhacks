@@ -26,8 +26,15 @@ class AdderViewController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         guard let text = quant.text, let number = Int(text) else {
-            
+            return
         }
+        
+        var authCodes = Array(repeating : "", count: number)
+        
+        for i in 0..<number {
+            authCodes[i] = randomString(length: 64)
+        }
+        
     
     }
     
@@ -43,6 +50,9 @@ class AdderViewController: UIViewController {
       return String((0..<length).map{ _ in letters.randomElement()! })
     }
 }
+
+
+
 
 extension AdderViewController : UITextFieldDelegate {
 
