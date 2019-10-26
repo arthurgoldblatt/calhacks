@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7700FA562364A698003770C9 /* checkmark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7700FA552364A698003770C9 /* checkmark.jpg */; };
+		771E1D632364B2B7005ECABE /* redcheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 771E1D622364B2B7005ECABE /* redcheck.png */; };
+		771E1D652364B3EA005ECABE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E1D642364B3EA005ECABE /* LoginViewController.swift */; };
 		7740BF612363A31700435F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF602363A31700435F30 /* AppDelegate.swift */; };
 		7740BF632363A31700435F30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF622363A31700435F30 /* SceneDelegate.swift */; };
 		7740BF652363A31700435F30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF642363A31700435F30 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		7700FA552364A698003770C9 /* checkmark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkmark.jpg; sourceTree = "<group>"; };
+		771E1D622364B2B7005ECABE /* redcheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redcheck.png; path = ../../../../Downloads/redcheck.png; sourceTree = "<group>"; };
+		771E1D642364B3EA005ECABE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7740BF5D2363A31700435F30 /* Honest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7740BF602363A31700435F30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7740BF622363A31700435F30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		7740BF5F2363A31700435F30 /* Honest */ = {
 			isa = PBXGroup;
 			children = (
+				771E1D622364B2B7005ECABE /* redcheck.png */,
 				7700FA552364A698003770C9 /* checkmark.jpg */,
 				89E622FA2363EE6600E42CAF /* hi.jpg */,
 				7740BF602363A31700435F30 /* AppDelegate.swift */,
@@ -115,6 +120,7 @@
 				7740BF692363A31900435F30 /* Assets.xcassets */,
 				7740BF6E2363A31900435F30 /* Info.plist */,
 				8916E84D2363A7C7007093DA /* ScannerViewController.swift */,
+				771E1D642364B3EA005ECABE /* LoginViewController.swift */,
 			);
 			path = Honest;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7740BF6A2363A31900435F30 /* Assets.xcassets in Resources */,
+				771E1D632364B2B7005ECABE /* redcheck.png in Resources */,
 				7700FA562364A698003770C9 /* checkmark.jpg in Resources */,
 				7740BF682363A31700435F30 /* Main.storyboard in Resources */,
 				89E622FB2363EE6600E42CAF /* hi.jpg in Resources */,
@@ -277,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771E1D652364B3EA005ECABE /* LoginViewController.swift in Sources */,
 				89E622FF23640D6800E42CAF /* AdderViewController.swift in Sources */,
 				7740BF652363A31700435F30 /* ViewController.swift in Sources */,
 				7740BF612363A31700435F30 /* AppDelegate.swift in Sources */,
@@ -378,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -432,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -447,14 +455,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R38YSAACD6;
+				DEVELOPMENT_TEAM = 4PXN5VT9D5;
 				INFOPLIST_FILE = Honest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = anthonybajoua.honest;
+				PRODUCT_BUNDLE_IDENTIFIER = anthonybajoua2.honest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,14 +474,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R38YSAACD6;
+				DEVELOPMENT_TEAM = 4PXN5VT9D5;
 				INFOPLIST_FILE = Honest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = anthonybajoua.honest;
+				PRODUCT_BUNDLE_IDENTIFIER = anthonybajoua2.honest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
