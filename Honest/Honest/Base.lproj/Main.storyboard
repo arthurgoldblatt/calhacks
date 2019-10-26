@@ -15,10 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan QR Code to Verify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X8-Cf-E9G">
-                                <rect key="frame" x="53" y="121" width="311" height="37"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR Code to Verify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X8-Cf-E9G">
+                                <rect key="frame" x="61.5" y="121" width="291" height="35"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="29"/>
                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -32,14 +31,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstItem="7X8-Cf-E9G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1hI-Qj-iHB"/>
                             <constraint firstItem="kZ7-aM-Ycz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3DH-Bd-I0O"/>
                             <constraint firstItem="kZ7-aM-Ycz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CdU-uo-4vL"/>
+                            <constraint firstItem="7X8-Cf-E9G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="DcF-mu-RkE"/>
+                            <constraint firstItem="7X8-Cf-E9G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Icz-hl-qYG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <keyCommands>
-                        <keyCommand/>
-                    </keyCommands>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
