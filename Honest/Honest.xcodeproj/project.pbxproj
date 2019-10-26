@@ -105,8 +105,8 @@
 			children = (
 				7740BF602363A31700435F30 /* AppDelegate.swift */,
 				7740BF622363A31700435F30 /* SceneDelegate.swift */,
+				890C4E3B2363DE8200D59246 /* Storyboards */,
 				7740BF642363A31700435F30 /* ViewController.swift */,
-				7740BF662363A31700435F30 /* Main.storyboard */,
 				89997DC92363C71C00BB8EEB /* square.jpg */,
 				7740BF692363A31900435F30 /* Assets.xcassets */,
 				7740BF6B2363A31900435F30 /* LaunchScreen.storyboard */,
@@ -132,6 +132,14 @@
 				7740BF842363A31900435F30 /* Info.plist */,
 			);
 			path = HonestUITests;
+			sourceTree = "<group>";
+		};
+		890C4E3B2363DE8200D59246 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7740BF662363A31700435F30 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
