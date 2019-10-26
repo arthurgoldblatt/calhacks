@@ -16,6 +16,7 @@
 		7740BF782363A31900435F30 /* HonestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF772363A31900435F30 /* HonestTests.swift */; };
 		7740BF832363A31900435F30 /* HonestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF822363A31900435F30 /* HonestUITests.swift */; };
 		8916E84E2363A7C7007093DA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916E84D2363A7C7007093DA /* ScannerViewController.swift */; };
+		89A0D2AE2364D2C4003FCBAB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89A0D2AC2364D2C4003FCBAB /* Model.xcdatamodeld */; };
 		89E622FB2363EE6600E42CAF /* hi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89E622FA2363EE6600E42CAF /* hi.jpg */; };
 		89E622FF23640D6800E42CAF /* AdderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E622FE23640D6800E42CAF /* AdderViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		7740BF822363A31900435F30 /* HonestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestUITests.swift; sourceTree = "<group>"; };
 		7740BF842363A31900435F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8916E84D2363A7C7007093DA /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		89A0D2AD2364D2C4003FCBAB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		89E622FA2363EE6600E42CAF /* hi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hi.jpg; sourceTree = "<group>"; };
 		89E622FE23640D6800E42CAF /* AdderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				89E622FE23640D6800E42CAF /* AdderViewController.swift */,
 				7740BF692363A31900435F30 /* Assets.xcassets */,
 				7740BF6E2363A31900435F30 /* Info.plist */,
+				89A0D2AC2364D2C4003FCBAB /* Model.xcdatamodeld */,
 				8916E84D2363A7C7007093DA /* ScannerViewController.swift */,
 			);
 			path = Honest;
@@ -282,6 +285,7 @@
 				7740BF612363A31700435F30 /* AppDelegate.swift in Sources */,
 				7740BF632363A31700435F30 /* SceneDelegate.swift in Sources */,
 				8916E84E2363A7C7007093DA /* ScannerViewController.swift in Sources */,
+				89A0D2AE2364D2C4003FCBAB /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +604,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89A0D2AC2364D2C4003FCBAB /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89A0D2AD2364D2C4003FCBAB /* Model.xcdatamodel */,
+			);
+			currentVersion = 89A0D2AD2364D2C4003FCBAB /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7740BF552363A31700435F30 /* Project object */;
 }
