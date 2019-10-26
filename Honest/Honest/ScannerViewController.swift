@@ -8,6 +8,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     @IBOutlet weak var square: UIImageView!
     
+    
+    
         
     
     override func viewDidLoad() {
@@ -45,11 +47,12 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         }
 
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.frame = view.layer.bounds
+        previewLayer.frame = square.layer.bounds
+        previewLayer.position = CGPoint(x :view.bounds.midX , y: view.bounds.midY)
         previewLayer.videoGravity = .resizeAspectFill
         
+        
         view.layer.addSublayer(previewLayer)
-        self.view.bringSubviewToFront(square)
         captureSession.startRunning()
     }
 
