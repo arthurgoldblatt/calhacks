@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import PDFKit
+
 
 class AdderViewController: UIViewController {
     
@@ -30,11 +32,16 @@ class AdderViewController: UIViewController {
         }
         
         var authCodes = Array(repeating : "", count: number)
-        
+        var qrcodes : [UIImage] = []
+    
         for i in 0..<number {
-            authCodes[i] = randomString(length: 64)
+            let code = randomString(length: 64)
+            authCodes[i] = code
+            let qrcode = generateQRCode(from: code)
+            qrcodes.append(qrcode!)
         }
-        
+            
+        let pdf = createPDFDataFromImage(images: qrcodes)
     
     }
     
@@ -45,10 +52,82 @@ class AdderViewController: UIViewController {
     }
     
     
+    func generateQRCode(from string: String) -> UIImage? {
+        let data = string.data(using: String.Encoding.ascii)
+
+        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+            filter.setValue(data, forKey: "inputMessage")
+            let transform = CGAffineTransform(scaleX: 3, y: 3)
+
+            if let output = filter.outputImage?.transformed(by: transform) {
+                return UIImage(ciImage: output)
+            }
+        }
+
+        return nil
+    }
+    
+    
     func randomString(length: Int) -> String {
       let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
       return String((0..<length).map{ _ in letters.randomElement()! })
     }
+    
+    
+//    func writePDF(images: [UIImage]) {
+//
+//        let pageRect = CGRect(x: 0, y: 0, width: 4 * 72.0, height: 4 * 72.0)
+//        let renderer = UIGraphicsPDFRenderer(bounds: pageRect)
+//
+//        var i = 0
+//
+//       let data = renderer.pdfData { ctx in
+//            ctx.beginPage()
+//
+//            images[i].draw(in: pageRect.insetBy(dx: 50, dy: 50))
+//            i = i + 1
+//        }
+    
+    func createPDFDataFromImage(images: [UIImage]) -> NSMutableData {
+        let pdfData = NSMutableData()
+        let imageRect = CGRect(x: 0, y: 0, width: images[0].size.width, height: images[0].size.height)
+        
+        UIGraphicsBeginPDFContextToData(pdfData, imageRect, nil)
+        
+        for i in 0..<images.count {
+            let imgView = UIImageView.init(image: images[i])
+            UIGraphicsBeginPDFPage()
+            let context = UIGraphicsGetCurrentContext()
+            imgView.layer.render(in: context!)
+        }
+        
+        
+        UIGraphicsEndPDFContext()
+        
+        let temporaryFolder = FileManager.default.temporaryDirectory
+        let fileName = name.text! + ".pdf"
+        let temporaryFileURL = temporaryFolder.appendingPathComponent(fileName)
+        
+        print(temporaryFileURL.path)
+        let link = temporaryFileURL.absoluteString
+        
+        do {
+            try pdfData.write(to: temporaryFileURL)
+            // your code
+            let activityViewController = UIActivityViewController(activityItems: [temporaryFileURL], applicationActivities: nil)
+            present(activityViewController, animated: true)
+                        
+        } catch {
+            print(error)
+        }
+        
+
+        return pdfData
+    }
+    
+    
+
+        
 }
 
 
