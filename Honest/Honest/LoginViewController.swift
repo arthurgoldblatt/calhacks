@@ -29,6 +29,7 @@ class LoginViewController: UIViewController {
         if validLogin(username: user, password: pass) {
             self.performSegue(withIdentifier: "loginSuccessSegue", sender: self)
         } else {
+            self.performSegue(withIdentifier: "failedLoginSegue", sender: self)
         }
     }
     
