@@ -15,26 +15,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3Y-KN-OVC">
+                                <rect key="frame" x="29" y="562" width="317" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1rB-Om-24C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Press to generate Product QR Codes"/>
+                                <connections>
+                                    <segue destination="yiD-hU-VCV" kind="show" id="Z4O-wz-W1X"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzl-Wz-5Yg">
-                                <rect key="frame" x="57.5" y="311.5" width="260" height="44"/>
+                                <rect key="frame" x="57.5" y="314.5" width="260" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="R0f-7j-13H"/>
+                                    <constraint firstAttribute="width" constant="260" id="xrq-Uu-J0v"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Press to Scan QR Code"/>
                                 <connections>
-                                    <segue destination="iRB-WE-DGX" kind="show" id="UtJ-6C-aLC"/>
+                                    <segue destination="iRB-WE-DGX" kind="show" id="B9z-6h-bsH"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="uzl-Wz-5Yg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TSh-Gm-xeM"/>
-                            <constraint firstItem="uzl-Wz-5Yg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="knS-Ze-gqM"/>
+                            <constraint firstItem="I3Y-KN-OVC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dk4-bR-8BD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I3Y-KN-OVC" secondAttribute="bottom" constant="75" id="HgA-LJ-gXz"/>
+                            <constraint firstItem="uzl-Wz-5Yg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b8I-P7-LdN"/>
+                            <constraint firstItem="uzl-Wz-5Yg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cg1-gI-GrA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-43" y="-117"/>
+            <point key="canvasLocation" x="-44" y="-117.39130434782609"/>
         </scene>
         <!--QR  Scanner-->
         <scene sceneID="jTc-y8-buc">
@@ -51,15 +68,14 @@
                                     <constraint firstAttribute="height" constant="320" id="bpm-1N-LfF"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Scan QR Code to Verify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqW-2n-3SO">
-                                <rect key="frame" x="97" y="100" width="180" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR Code to Verify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqW-2n-3SO">
+                                <rect key="frame" x="97.5" y="92.5" width="180" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="7UK-DT-rH7"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="7kG-rQ-b3X"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="7kG-rQ-b3X"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="PRo-LD-kf2"/>
                                     <constraint firstAttribute="height" constant="21" id="XUw-Lb-pkt"/>
                                     <constraint firstAttribute="width" constant="180" id="po0-i2-8JS"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="zcW-OH-p9I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,14 +84,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="7yu-lh-vyI"/>
-                            <constraint firstItem="AqW-2n-3SO" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="8Lw-US-5EV"/>
-                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerY" secondItem="ab9-98-sEi" secondAttribute="centerY" id="BaA-f0-8HY"/>
-                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerY" secondItem="ab9-98-sEi" secondAttribute="centerY" id="Slb-hu-6wa"/>
-                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="k7R-nr-z29"/>
-                            <constraint firstItem="AqW-2n-3SO" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="pWt-gz-2Tl"/>
-                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="sVJ-7T-yLi"/>
-                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerY" secondItem="ab9-98-sEi" secondAttribute="centerY" id="xQD-0h-n5k"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="top" secondItem="AqW-2n-3SO" secondAttribute="bottom" constant="50" id="4GP-9y-YNx"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerY" secondItem="ab9-98-sEi" secondAttribute="centerY" id="DuM-zc-n7c"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="bFq-wa-S3C"/>
+                            <constraint firstItem="AqW-2n-3SO" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="wtI-Cm-cjs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BFs-Px-5uE"/>
                     </view>
@@ -86,7 +98,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk8-C2-8Ng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="-117"/>
+            <point key="canvasLocation" x="960.79999999999995" y="-117.39130434782609"/>
+        </scene>
+        <!--Product Adder-->
+        <scene sceneID="vpr-zh-qin">
+            <objects>
+                <viewController title="Product Adder" id="yiD-hU-VCV" customClass="AdderViewController" customModule="Honest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DUS-eR-61i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input Product Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KO-gS-5D1">
+                                <rect key="frame" x="107" y="434" width="180" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gPd-ek-DnR">
+                                <rect key="frame" x="149" y="515" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="quant:" destination="MqR-Ec-Wkt" eventType="editingDidEnd" id="2SG-zx-8Fg"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Input Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acg-vU-oRG">
+                                <rect key="frame" x="122" y="194" width="151" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="WTu-Z4-MCu"/>
+                                    <constraint firstAttribute="height" constant="21" id="kR5-PI-E7E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vnv-wf-eTZ">
+                                <rect key="frame" x="84" y="297" width="226" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="4KT-wn-z2B"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="Qcz-qO-fKN"/>
+                                    <constraint firstAttribute="height" constant="34" id="yXD-de-Ao8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="name:" destination="MqR-Ec-Wkt" eventType="editingDidEnd" id="sLE-Gr-o9V"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="vnv-wf-eTZ" firstAttribute="top" secondItem="Acg-vU-oRG" secondAttribute="bottom" constant="20" id="Bpq-hv-mE6"/>
+                            <constraint firstItem="vnv-wf-eTZ" firstAttribute="top" secondItem="Acg-vU-oRG" secondAttribute="bottom" constant="20" id="MYY-Wn-dKa"/>
+                            <constraint firstItem="vnv-wf-eTZ" firstAttribute="top" secondItem="Acg-vU-oRG" secondAttribute="bottom" constant="20" id="qsq-TR-62f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mM0-1U-Cuk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xph-cp-0LD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfX-N2-2Bc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="MqR-Ec-Wkt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="640.92953523238384"/>
         </scene>
     </scenes>
 </document>

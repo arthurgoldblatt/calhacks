@@ -16,6 +16,7 @@
 		7740BF832363A31900435F30 /* HonestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF822363A31900435F30 /* HonestUITests.swift */; };
 		8916E84E2363A7C7007093DA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916E84D2363A7C7007093DA /* ScannerViewController.swift */; };
 		89E622FB2363EE6600E42CAF /* hi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89E622FA2363EE6600E42CAF /* hi.jpg */; };
+		89E622FF23640D6800E42CAF /* AdderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E622FE23640D6800E42CAF /* AdderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7740BF842363A31900435F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8916E84D2363A7C7007093DA /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		89E622FA2363EE6600E42CAF /* hi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hi.jpg; sourceTree = "<group>"; };
+		89E622FE23640D6800E42CAF /* AdderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7740BF622363A31700435F30 /* SceneDelegate.swift */,
 				890C4E3B2363DE8200D59246 /* Storyboards */,
 				7740BF642363A31700435F30 /* ViewController.swift */,
+				89E622FE23640D6800E42CAF /* AdderViewController.swift */,
 				7740BF692363A31900435F30 /* Assets.xcassets */,
 				7740BF6E2363A31900435F30 /* Info.plist */,
 				8916E84D2363A7C7007093DA /* ScannerViewController.swift */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E622FF23640D6800E42CAF /* AdderViewController.swift in Sources */,
 				7740BF652363A31700435F30 /* ViewController.swift in Sources */,
 				7740BF612363A31700435F30 /* AppDelegate.swift in Sources */,
 				7740BF632363A31700435F30 /* SceneDelegate.swift in Sources */,
