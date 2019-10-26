@@ -15,7 +15,7 @@
 		7740BF782363A31900435F30 /* HonestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF772363A31900435F30 /* HonestTests.swift */; };
 		7740BF832363A31900435F30 /* HonestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740BF822363A31900435F30 /* HonestUITests.swift */; };
 		8916E84E2363A7C7007093DA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916E84D2363A7C7007093DA /* ScannerViewController.swift */; };
-		89997DCA2363C71C00BB8EEB /* square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89997DC92363C71C00BB8EEB /* square.jpg */; };
+		89E622FB2363EE6600E42CAF /* hi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89E622FA2363EE6600E42CAF /* hi.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		7740BF822363A31900435F30 /* HonestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestUITests.swift; sourceTree = "<group>"; };
 		7740BF842363A31900435F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8916E84D2363A7C7007093DA /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
-		89997DC92363C71C00BB8EEB /* square.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = square.jpg; path = ../../../square.jpg; sourceTree = "<group>"; };
+		89E622FA2363EE6600E42CAF /* hi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hi.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 		7740BF5F2363A31700435F30 /* Honest */ = {
 			isa = PBXGroup;
 			children = (
+				89E622FA2363EE6600E42CAF /* hi.jpg */,
 				7740BF602363A31700435F30 /* AppDelegate.swift */,
 				7740BF622363A31700435F30 /* SceneDelegate.swift */,
 				890C4E3B2363DE8200D59246 /* Storyboards */,
 				7740BF642363A31700435F30 /* ViewController.swift */,
-				89997DC92363C71C00BB8EEB /* square.jpg */,
 				7740BF692363A31900435F30 /* Assets.xcassets */,
 				7740BF6E2363A31900435F30 /* Info.plist */,
 				8916E84D2363A7C7007093DA /* ScannerViewController.swift */,
@@ -244,8 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7740BF6A2363A31900435F30 /* Assets.xcassets in Resources */,
-				89997DCA2363C71C00BB8EEB /* square.jpg in Resources */,
 				7740BF682363A31700435F30 /* Main.storyboard in Resources */,
+				89E622FB2363EE6600E42CAF /* hi.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

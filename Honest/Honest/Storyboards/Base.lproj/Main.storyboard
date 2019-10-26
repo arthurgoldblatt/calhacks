@@ -44,13 +44,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O4R-Wb-7AS">
-                                <rect key="frame" x="27.5" y="163.5" width="320" height="320"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="bLQ-nQ-bm3"/>
-                                    <constraint firstAttribute="width" constant="320" id="sGX-wv-3UC"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Scan QR Code to Verify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqW-2n-3SO">
                                 <rect key="frame" x="97" y="82" width="180" height="21"/>
                                 <constraints>
@@ -63,20 +56,28 @@
                                 <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IYo-F4-vul">
+                                <rect key="frame" x="27.5" y="163.5" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="ATU-cg-llV"/>
+                                    <constraint firstAttribute="height" constant="320" id="bpm-1N-LfF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="O4R-Wb-7AS" firstAttribute="centerY" secondItem="ab9-98-sEi" secondAttribute="centerY" id="61K-t1-Vmw"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="7yu-lh-vyI"/>
                             <constraint firstItem="AqW-2n-3SO" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="8Lw-US-5EV"/>
-                            <constraint firstItem="O4R-Wb-7AS" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="fRM-Lc-fZQ"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerY" secondItem="ab9-98-sEi" secondAttribute="centerY" id="BaA-f0-8HY"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerY" secondItem="ab9-98-sEi" secondAttribute="centerY" id="Slb-hu-6wa"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="k7R-nr-z29"/>
                             <constraint firstItem="AqW-2n-3SO" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="pWt-gz-2Tl"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerX" secondItem="ab9-98-sEi" secondAttribute="centerX" id="sVJ-7T-yLi"/>
+                            <constraint firstItem="IYo-F4-vul" firstAttribute="centerY" secondItem="ab9-98-sEi" secondAttribute="centerY" id="xQD-0h-n5k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BFs-Px-5uE"/>
                     </view>
                     <navigationItem key="navigationItem" id="DcY-Bc-tel"/>
-                    <connections>
-                        <outlet property="square" destination="O4R-Wb-7AS" id="Boe-Mg-ABF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk8-C2-8Ng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +85,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="square.jpg" width="450" height="450"/>
+        <image name="hi.jpg" width="1499" height="1500"/>
     </resources>
 </document>
