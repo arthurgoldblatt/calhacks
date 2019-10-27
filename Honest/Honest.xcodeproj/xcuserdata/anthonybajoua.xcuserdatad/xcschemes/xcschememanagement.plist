@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Honest.xcscheme_^#shared#^_</key>
+		<key>Honest 1.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7740BF5C2363A31700435F30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7740BF722363A31900435F30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7740BF7D2363A31900435F30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
