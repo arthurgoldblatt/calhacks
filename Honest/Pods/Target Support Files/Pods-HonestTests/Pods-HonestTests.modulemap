@@ -1,0 +1,6 @@
+framework module Pods_HonestTests {
+  umbrella header "Pods-HonestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

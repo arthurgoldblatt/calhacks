@@ -39,9 +39,10 @@ class AdderViewController: UIViewController {
             authCodes[i] = code
             let qrcode = generateQRCode(from: code)
             qrcodes.append(qrcode!)
+            sendJson()
         }
             
-        let pdf = createPDFDataFromImage(images: qrcodes)
+        createPDFDataFromImage(images: qrcodes)
     
     }
     
@@ -109,7 +110,6 @@ class AdderViewController: UIViewController {
         let temporaryFileURL = temporaryFolder.appendingPathComponent(fileName)
         
         print(temporaryFileURL.path)
-        let link = temporaryFileURL.absoluteString
         
         do {
             try pdfData.write(to: temporaryFileURL)
@@ -125,8 +125,53 @@ class AdderViewController: UIViewController {
         return pdfData
     }
     
-    
+//    // the only one that work
+//    func sendJson(code: String, name: String){
+//
+//
+//        let request = NSMutableURLRequest(url: NSURL(string: "localhost/index.php")! as URL)
+//        request.httpMethod = "POST"
+//        let postString = "Code=\(code)&Name=\(name)"
+//        request.httpBody = postString.data(using: String.Encoding.utf8)
+//
+//        let task = URLSession.shared.dataTask(with: request as URLRequest) {
+//            data, response, error in
+//
+//            if error != nil {
+//                print("error=\(error)")
+//                return
+//            }
+//
+//            print("response = \(response)")
+//
+//            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+//            print("responseString = \(responseString)")
+//        }
+//        task.resume()
+//    }
+    func sendJson(){
+        let usernametext = "new person"
+        let passwordtext = "nice"
+        let request = NSMutableURLRequest(url: NSURL(string: "http://localhost/example/todatabase.php")! as URL)
+        request.httpMethod = "POST"
+        let postString = "Title=\(usernametext)&content=\(passwordtext)"
+        request.httpBody = postString.data(using: String.Encoding.utf8)
 
+        let task = URLSession.shared.dataTask(with: request as URLRequest) {
+            data, response, error in
+
+            if error != nil {
+                print("error=\(error)")
+                return
+            }
+
+            print("response = \(response)")
+
+            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            print("responseString = \(responseString)")
+        }
+        task.resume()
+    }
         
 }
 
