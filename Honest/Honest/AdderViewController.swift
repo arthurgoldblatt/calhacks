@@ -9,14 +9,11 @@
 import UIKit
 import PDFKit
 
-
 class AdderViewController: UIViewController {
     
-    
-    
     @IBOutlet weak var name: UITextField!
-    
     @IBOutlet weak var quant: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +36,6 @@ class AdderViewController: UIViewController {
             authCodes[i] = code
             let qrcode = generateQRCode(from: code)
             qrcodes.append(qrcode!)
-            sendJson()
         }
             
         createPDFDataFromImage(images: qrcodes)
@@ -89,7 +85,7 @@ class AdderViewController: UIViewController {
 //            i = i + 1
 //        }
     
-    func createPDFDataFromImage(images: [UIImage]) -> NSMutableData {
+    func createPDFDataFromImage(images: [UIImage]) {
         let pdfData = NSMutableData()
         let imageRect = CGRect(x: 0, y: 0, width: images[0].size.width, height: images[0].size.height)
         
@@ -120,10 +116,7 @@ class AdderViewController: UIViewController {
         } catch {
             print(error)
         }
-        
-
-        return pdfData
-    }
+            }
     
 //    // the only one that work
 //    func sendJson(code: String, name: String){
@@ -149,29 +142,6 @@ class AdderViewController: UIViewController {
 //        }
 //        task.resume()
 //    }
-    func sendJson(){
-        let usernametext = "new person"
-        let passwordtext = "nice"
-        let request = NSMutableURLRequest(url: NSURL(string: "http://localhost/example/todatabase.php")! as URL)
-        request.httpMethod = "POST"
-        let postString = "Title=\(usernametext)&content=\(passwordtext)"
-        request.httpBody = postString.data(using: String.Encoding.utf8)
-
-        let task = URLSession.shared.dataTask(with: request as URLRequest) {
-            data, response, error in
-
-            if error != nil {
-                print("error=\(error)")
-                return
-            }
-
-            print("response = \(response)")
-
-            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-            print("responseString = \(responseString)")
-        }
-        task.resume()
-    }
         
 }
 

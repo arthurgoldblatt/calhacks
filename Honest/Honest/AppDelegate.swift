@@ -1,21 +1,16 @@
-//
-//  AppDelegate.swift
-//  Honest
-//
-//  Created by Arthur Goldblatt on 10/25/19.
-//  Copyright © 2019 Arthur Goldblatt. All rights reserved.
+//  Created by Anthony Bajoua on 10/27/19.
+//  Copyright © 2019 booligans. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    var window: UIWindow?
-    
+
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+        // Override point for customization after application launch.
         return true
     }
 

@@ -197,6 +197,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Xph-cp-0LD"/>
                     <connections>
+                        <outlet property="hi" destination="Q6z-v6-Sz4" id="SN4-WS-sEC"/>
                         <outlet property="name" destination="vnv-wf-eTZ" id="IT4-A8-dKa"/>
                         <outlet property="quant" destination="gPd-ek-DnR" id="xT2-8N-L3P"/>
                     </connections>

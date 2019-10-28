@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8962876F2366563300B76408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8962876E2366563300B76408 /* AppDelegate.swift */; };
+		896287712366563300B76408 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896287702366563300B76408 /* SceneDelegate.swift */; };
+		896287732366563300B76408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896287722366563300B76408 /* ViewController.swift */; };
+		896287762366563300B76408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896287742366563300B76408 /* Main.storyboard */; };
+		896287782366563700B76408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896287772366563700B76408 /* Assets.xcassets */; };
+		8962877B2366563700B76408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896287792366563700B76408 /* LaunchScreen.storyboard */; };
+		896287862366563700B76408 /* firebasedemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896287852366563700B76408 /* firebasedemoTests.swift */; };
+		896287912366563700B76408 /* firebasedemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896287902366563700B76408 /* firebasedemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		896287822366563700B76408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896287632366563300B76408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8962876A2366563300B76408;
+			remoteInfo = firebasedemo;
+		};
+		8962878D2366563700B76408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896287632366563300B76408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8962876A2366563300B76408;
+			remoteInfo = firebasedemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8962876B2366563300B76408 /* firebasedemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebasedemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8962876E2366563300B76408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		896287702366563300B76408 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		896287722366563300B76408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		896287752366563300B76408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		896287772366563700B76408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8962877A2366563700B76408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8962877C2366563700B76408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896287812366563700B76408 /* firebasedemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firebasedemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		896287852366563700B76408 /* firebasedemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebasedemoTests.swift; sourceTree = "<group>"; };
+		896287872366563700B76408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8962878C2366563700B76408 /* firebasedemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firebasedemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		896287902366563700B76408 /* firebasedemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebasedemoUITests.swift; sourceTree = "<group>"; };
+		896287922366563700B76408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		896287682366563300B76408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8962877E2366563700B76408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896287892366563700B76408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		896287622366563300B76408 = {
+			isa = PBXGroup;
+			children = (
+				8962876D2366563300B76408 /* firebasedemo */,
+				896287842366563700B76408 /* firebasedemoTests */,
+				8962878F2366563700B76408 /* firebasedemoUITests */,
+				8962876C2366563300B76408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8962876C2366563300B76408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8962876B2366563300B76408 /* firebasedemo.app */,
+				896287812366563700B76408 /* firebasedemoTests.xctest */,
+				8962878C2366563700B76408 /* firebasedemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8962876D2366563300B76408 /* firebasedemo */ = {
+			isa = PBXGroup;
+			children = (
+				8962876E2366563300B76408 /* AppDelegate.swift */,
+				896287702366563300B76408 /* SceneDelegate.swift */,
+				896287722366563300B76408 /* ViewController.swift */,
+				896287742366563300B76408 /* Main.storyboard */,
+				896287772366563700B76408 /* Assets.xcassets */,
+				896287792366563700B76408 /* LaunchScreen.storyboard */,
+				8962877C2366563700B76408 /* Info.plist */,
+			);
+			path = firebasedemo;
+			sourceTree = "<group>";
+		};
+		896287842366563700B76408 /* firebasedemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				896287852366563700B76408 /* firebasedemoTests.swift */,
+				896287872366563700B76408 /* Info.plist */,
+			);
+			path = firebasedemoTests;
+			sourceTree = "<group>";
+		};
+		8962878F2366563700B76408 /* firebasedemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				896287902366563700B76408 /* firebasedemoUITests.swift */,
+				896287922366563700B76408 /* Info.plist */,
+			);
+			path = firebasedemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8962876A2366563300B76408 /* firebasedemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896287952366563700B76408 /* Build configuration list for PBXNativeTarget "firebasedemo" */;
+			buildPhases = (
+				896287672366563300B76408 /* Sources */,
+				896287682366563300B76408 /* Frameworks */,
+				896287692366563300B76408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = firebasedemo;
+			productName = firebasedemo;
+			productReference = 8962876B2366563300B76408 /* firebasedemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		896287802366563700B76408 /* firebasedemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896287982366563700B76408 /* Build configuration list for PBXNativeTarget "firebasedemoTests" */;
+			buildPhases = (
+				8962877D2366563700B76408 /* Sources */,
+				8962877E2366563700B76408 /* Frameworks */,
+				8962877F2366563700B76408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				896287832366563700B76408 /* PBXTargetDependency */,
+			);
+			name = firebasedemoTests;
+			productName = firebasedemoTests;
+			productReference = 896287812366563700B76408 /* firebasedemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8962878B2366563700B76408 /* firebasedemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8962879B2366563700B76408 /* Build configuration list for PBXNativeTarget "firebasedemoUITests" */;
+			buildPhases = (
+				896287882366563700B76408 /* Sources */,
+				896287892366563700B76408 /* Frameworks */,
+				8962878A2366563700B76408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8962878E2366563700B76408 /* PBXTargetDependency */,
+			);
+			name = firebasedemoUITests;
+			productName = firebasedemoUITests;
+			productReference = 8962878C2366563700B76408 /* firebasedemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		896287632366563300B76408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = booligans;
+				TargetAttributes = {
+					8962876A2366563300B76408 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					896287802366563700B76408 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 8962876A2366563300B76408;
+					};
+					8962878B2366563700B76408 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 8962876A2366563300B76408;
+					};
+				};
+			};
+			buildConfigurationList = 896287662366563300B76408 /* Build configuration list for PBXProject "firebasedemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 896287622366563300B76408;
+			productRefGroup = 8962876C2366563300B76408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8962876A2366563300B76408 /* firebasedemo */,
+				896287802366563700B76408 /* firebasedemoTests */,
+				8962878B2366563700B76408 /* firebasedemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		896287692366563300B76408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8962877B2366563700B76408 /* LaunchScreen.storyboard in Resources */,
+				896287782366563700B76408 /* Assets.xcassets in Resources */,
+				896287762366563300B76408 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8962877F2366563700B76408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8962878A2366563700B76408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		896287672366563300B76408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896287732366563300B76408 /* ViewController.swift in Sources */,
+				8962876F2366563300B76408 /* AppDelegate.swift in Sources */,
+				896287712366563300B76408 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8962877D2366563700B76408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896287862366563700B76408 /* firebasedemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896287882366563700B76408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896287912366563700B76408 /* firebasedemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		896287832366563700B76408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8962876A2366563300B76408 /* firebasedemo */;
+			targetProxy = 896287822366563700B76408 /* PBXContainerItemProxy */;
+		};
+		8962878E2366563700B76408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8962876A2366563300B76408 /* firebasedemo */;
+			targetProxy = 8962878D2366563700B76408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		896287742366563300B76408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				896287752366563300B76408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		896287792366563700B76408 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8962877A2366563700B76408 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		896287932366563700B76408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		896287942366563700B76408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		896287962366563700B76408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R38YSAACD6;
+				INFOPLIST_FILE = firebasedemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = booligans.firebasedemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		896287972366563700B76408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R38YSAACD6;
+				INFOPLIST_FILE = firebasedemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = booligans.firebasedemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		896287992366563700B76408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R38YSAACD6;
+				INFOPLIST_FILE = firebasedemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = booligans.firebasedemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/firebasedemo.app/firebasedemo";
+			};
+			name = Debug;
+		};
+		8962879A2366563700B76408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R38YSAACD6;
+				INFOPLIST_FILE = firebasedemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = booligans.firebasedemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/firebasedemo.app/firebasedemo";
+			};
+			name = Release;
+		};
+		8962879C2366563700B76408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R38YSAACD6;
+				INFOPLIST_FILE = firebasedemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = booligans.firebasedemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = firebasedemo;
+			};
+			name = Debug;
+		};
+		8962879D2366563700B76408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R38YSAACD6;
+				INFOPLIST_FILE = firebasedemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = booligans.firebasedemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = firebasedemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		896287662366563300B76408 /* Build configuration list for PBXProject "firebasedemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896287932366563700B76408 /* Debug */,
+				896287942366563700B76408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		896287952366563700B76408 /* Build configuration list for PBXNativeTarget "firebasedemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896287962366563700B76408 /* Debug */,
+				896287972366563700B76408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		896287982366563700B76408 /* Build configuration list for PBXNativeTarget "firebasedemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896287992366563700B76408 /* Debug */,
+				8962879A2366563700B76408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8962879B2366563700B76408 /* Build configuration list for PBXNativeTarget "firebasedemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8962879C2366563700B76408 /* Debug */,
+				8962879D2366563700B76408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 896287632366563300B76408 /* Project object */;
+}
